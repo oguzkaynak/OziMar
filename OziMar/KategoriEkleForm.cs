@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OziMar
 {
-    public partial class Form1 : Form
+    public partial class KategoriEkleForm : Form
     {
-        public Form1()
+        public KategoriEkleForm()
         {
             InitializeComponent();
         }

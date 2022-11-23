@@ -1,0 +1,14 @@
+C:\Users\User\Documents\GitHub\OziMar\OziMar\bin\Debug\OziMar.exe.config
+C:\Users\User\Documents\GitHub\OziMar\OziMar\bin\Debug\OziMar.exe
+C:\Users\User\Documents\GitHub\OziMar\OziMar\bin\Debug\OziMar.pdb
+C:\Users\User\Documents\GitHub\OziMar\OziMar\bin\Debug\DataAccessLayer.dll
+C:\Users\User\Documents\GitHub\OziMar\OziMar\bin\Debug\DataAccessLayer.pdb
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.AnaForm.resources
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.exe
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.pdb
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.KategoriEkleForm.resources
