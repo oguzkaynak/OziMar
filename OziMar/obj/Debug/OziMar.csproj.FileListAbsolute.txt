@@ -12,3 +12,4 @@ C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.csproj.CopyComplet
 C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.exe
 C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.pdb
 C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.KategoriEkleForm.resources
+C:\Users\User\Documents\GitHub\OziMar\OziMar\obj\Debug\OziMar.UrunListeleForm.resources

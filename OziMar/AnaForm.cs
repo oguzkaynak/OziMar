@@ -48,5 +48,26 @@ namespace OziMar
             }
 
         }
+
+        private void TSMI_UrunListele_Click(object sender, EventArgs e)
+        {
+            Form[] acikformlar = this.MdiChildren;
+            bool acikmi = false;
+            foreach (Form item in acikformlar)
+            {
+                if (item.GetType()==typeof(UrunListeleForm))
+                {
+                    acikmi = true;
+                    item.Activate();
+                    break;
+                }
+            }
+            if (acikmi==false)
+            {
+                UrunListeleForm frm = new UrunListeleForm();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

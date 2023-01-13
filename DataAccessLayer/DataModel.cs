@@ -62,13 +62,13 @@ namespace DataAccessLayer
             {
                 con.Close();
             }
-            
+
         }
         public Kategori GetCategory(int id)
         {
             try
             {
-                cmd.CommandText = "SELECT CategoryID,CategoryName,Description FROM Categories WHERE CategoryID=@id";
+                cmd.CommandText = "SELECT kategoryID,KategoriAdı,Açıklama FROM TblKategoriler WHERE kategoryID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -86,14 +86,54 @@ namespace DataAccessLayer
             catch (Exception)
             {
                 return null;
-                
+
             }
             finally { con.Close(); }
         }
-       
-       
+        public bool UpdateCategory(Kategori cat)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE TblKategoriler SET KategoriAdı=@cn,Açıklama=@d WHERE kategoryID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@cn", cat.Isim);
+                cmd.Parameters.AddWithValue("@d", cat.Aciklama);
+                cmd.Parameters.AddWithValue("@id", cat.ID);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
 
-        
-
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public bool RemooveCategory(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE FROM TblKategoriler WHERE kategoryID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }
+
+       

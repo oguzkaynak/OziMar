@@ -34,21 +34,21 @@ namespace OziMar
             this.TSMI_Kapat = new System.Windows.Forms.ToolStripMenuItem();
             this.işlemlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_kategoriİslemleri = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMI_UrunIslemleri = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMI_TedarikciIslemleri = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMI_MusteriIslemleri = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_KategoriEkle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_KategoriGuncelle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_KategoriListele = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_KategoriSil = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_UrunIslemleri = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIUrunEkle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_UrunGuncelle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_UrunListele = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_UrunSil = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_TedarikciIslemleri = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_TedariciEkle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_TedarikciGuncelle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_TedarikciListele = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_TedarikciSil = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_MusteriIslemleri = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_MusteriEkle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_MusteriGuncelle = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_MusteriListele = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +78,7 @@ namespace OziMar
             // TSMI_Kapat
             // 
             this.TSMI_Kapat.Name = "TSMI_Kapat";
-            this.TSMI_Kapat.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_Kapat.Size = new System.Drawing.Size(104, 22);
             this.TSMI_Kapat.Text = "Kapat";
             // 
             // işlemlerToolStripMenuItem
@@ -103,6 +103,31 @@ namespace OziMar
             this.TSMI_kategoriİslemleri.Size = new System.Drawing.Size(180, 22);
             this.TSMI_kategoriİslemleri.Text = "Kategori İşlemleri";
             // 
+            // TSMI_KategoriEkle
+            // 
+            this.TSMI_KategoriEkle.Name = "TSMI_KategoriEkle";
+            this.TSMI_KategoriEkle.Size = new System.Drawing.Size(167, 22);
+            this.TSMI_KategoriEkle.Text = "Kategori Ekle";
+            this.TSMI_KategoriEkle.Click += new System.EventHandler(this.TSMI_KategoriEkle_Click);
+            // 
+            // TSMI_KategoriGuncelle
+            // 
+            this.TSMI_KategoriGuncelle.Name = "TSMI_KategoriGuncelle";
+            this.TSMI_KategoriGuncelle.Size = new System.Drawing.Size(167, 22);
+            this.TSMI_KategoriGuncelle.Text = "Kategori Güncelle";
+            // 
+            // TSMI_KategoriListele
+            // 
+            this.TSMI_KategoriListele.Name = "TSMI_KategoriListele";
+            this.TSMI_KategoriListele.Size = new System.Drawing.Size(167, 22);
+            this.TSMI_KategoriListele.Text = "Kategori Listele";
+            // 
+            // TSMI_KategoriSil
+            // 
+            this.TSMI_KategoriSil.Name = "TSMI_KategoriSil";
+            this.TSMI_KategoriSil.Size = new System.Drawing.Size(167, 22);
+            this.TSMI_KategoriSil.Text = "Kategori Sil";
+            // 
             // TSMI_UrunIslemleri
             // 
             this.TSMI_UrunIslemleri.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -113,53 +138,6 @@ namespace OziMar
             this.TSMI_UrunIslemleri.Name = "TSMI_UrunIslemleri";
             this.TSMI_UrunIslemleri.Size = new System.Drawing.Size(180, 22);
             this.TSMI_UrunIslemleri.Text = "Ürün İşlemleri";
-            // 
-            // TSMI_TedarikciIslemleri
-            // 
-            this.TSMI_TedarikciIslemleri.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMI_TedariciEkle,
-            this.TSMI_TedarikciGuncelle,
-            this.TSMI_TedarikciListele,
-            this.TSMI_TedarikciSil});
-            this.TSMI_TedarikciIslemleri.Name = "TSMI_TedarikciIslemleri";
-            this.TSMI_TedarikciIslemleri.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_TedarikciIslemleri.Text = "Tedarikci İşlemleri";
-            // 
-            // TSMI_MusteriIslemleri
-            // 
-            this.TSMI_MusteriIslemleri.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMI_MusteriEkle,
-            this.TSMI_MusteriGuncelle,
-            this.TSMI_MusteriListele,
-            this.TSMI_MusteriSil});
-            this.TSMI_MusteriIslemleri.Name = "TSMI_MusteriIslemleri";
-            this.TSMI_MusteriIslemleri.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_MusteriIslemleri.Text = "Müşteri İşlemleri";
-            // 
-            // TSMI_KategoriEkle
-            // 
-            this.TSMI_KategoriEkle.Name = "TSMI_KategoriEkle";
-            this.TSMI_KategoriEkle.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_KategoriEkle.Text = "Kategori Ekle";
-            this.TSMI_KategoriEkle.Click += new System.EventHandler(this.TSMI_KategoriEkle_Click);
-            // 
-            // TSMI_KategoriGuncelle
-            // 
-            this.TSMI_KategoriGuncelle.Name = "TSMI_KategoriGuncelle";
-            this.TSMI_KategoriGuncelle.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_KategoriGuncelle.Text = "Kategori Güncelle";
-            // 
-            // TSMI_KategoriListele
-            // 
-            this.TSMI_KategoriListele.Name = "TSMI_KategoriListele";
-            this.TSMI_KategoriListele.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_KategoriListele.Text = "Kategori Listele";
-            // 
-            // TSMI_KategoriSil
-            // 
-            this.TSMI_KategoriSil.Name = "TSMI_KategoriSil";
-            this.TSMI_KategoriSil.Size = new System.Drawing.Size(180, 22);
-            this.TSMI_KategoriSil.Text = "Kategori Sil";
             // 
             // TSMIUrunEkle
             // 
@@ -178,6 +156,7 @@ namespace OziMar
             this.TSMI_UrunListele.Name = "TSMI_UrunListele";
             this.TSMI_UrunListele.Size = new System.Drawing.Size(180, 22);
             this.TSMI_UrunListele.Text = "Ürün Listele";
+            this.TSMI_UrunListele.Click += new System.EventHandler(this.TSMI_UrunListele_Click);
             // 
             // TSMI_UrunSil
             // 
@@ -185,52 +164,74 @@ namespace OziMar
             this.TSMI_UrunSil.Size = new System.Drawing.Size(180, 22);
             this.TSMI_UrunSil.Text = "Ürün Sil";
             // 
+            // TSMI_TedarikciIslemleri
+            // 
+            this.TSMI_TedarikciIslemleri.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMI_TedariciEkle,
+            this.TSMI_TedarikciGuncelle,
+            this.TSMI_TedarikciListele,
+            this.TSMI_TedarikciSil});
+            this.TSMI_TedarikciIslemleri.Name = "TSMI_TedarikciIslemleri";
+            this.TSMI_TedarikciIslemleri.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_TedarikciIslemleri.Text = "Tedarikci İşlemleri";
+            // 
             // TSMI_TedariciEkle
             // 
             this.TSMI_TedariciEkle.Name = "TSMI_TedariciEkle";
-            this.TSMI_TedariciEkle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_TedariciEkle.Size = new System.Drawing.Size(169, 22);
             this.TSMI_TedariciEkle.Text = "Tedarikci Ekle";
             // 
             // TSMI_TedarikciGuncelle
             // 
             this.TSMI_TedarikciGuncelle.Name = "TSMI_TedarikciGuncelle";
-            this.TSMI_TedarikciGuncelle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_TedarikciGuncelle.Size = new System.Drawing.Size(169, 22);
             this.TSMI_TedarikciGuncelle.Text = "Tedarikci Güncelle";
             // 
             // TSMI_TedarikciListele
             // 
             this.TSMI_TedarikciListele.Name = "TSMI_TedarikciListele";
-            this.TSMI_TedarikciListele.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_TedarikciListele.Size = new System.Drawing.Size(169, 22);
             this.TSMI_TedarikciListele.Text = "Tedarkci Listele";
             // 
             // TSMI_TedarikciSil
             // 
             this.TSMI_TedarikciSil.Name = "TSMI_TedarikciSil";
-            this.TSMI_TedarikciSil.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_TedarikciSil.Size = new System.Drawing.Size(169, 22);
             this.TSMI_TedarikciSil.Text = "Tedarikci Sil";
+            // 
+            // TSMI_MusteriIslemleri
+            // 
+            this.TSMI_MusteriIslemleri.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMI_MusteriEkle,
+            this.TSMI_MusteriGuncelle,
+            this.TSMI_MusteriListele,
+            this.TSMI_MusteriSil});
+            this.TSMI_MusteriIslemleri.Name = "TSMI_MusteriIslemleri";
+            this.TSMI_MusteriIslemleri.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_MusteriIslemleri.Text = "Müşteri İşlemleri";
             // 
             // TSMI_MusteriEkle
             // 
             this.TSMI_MusteriEkle.Name = "TSMI_MusteriEkle";
-            this.TSMI_MusteriEkle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_MusteriEkle.Size = new System.Drawing.Size(163, 22);
             this.TSMI_MusteriEkle.Text = "Müşteri Ekle";
             // 
             // TSMI_MusteriGuncelle
             // 
             this.TSMI_MusteriGuncelle.Name = "TSMI_MusteriGuncelle";
-            this.TSMI_MusteriGuncelle.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_MusteriGuncelle.Size = new System.Drawing.Size(163, 22);
             this.TSMI_MusteriGuncelle.Text = "Müşteri Güncelle";
             // 
             // TSMI_MusteriListele
             // 
             this.TSMI_MusteriListele.Name = "TSMI_MusteriListele";
-            this.TSMI_MusteriListele.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_MusteriListele.Size = new System.Drawing.Size(163, 22);
             this.TSMI_MusteriListele.Text = "Müşteri Listele";
             // 
             // TSMI_MusteriSil
             // 
             this.TSMI_MusteriSil.Name = "TSMI_MusteriSil";
-            this.TSMI_MusteriSil.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_MusteriSil.Size = new System.Drawing.Size(163, 22);
             this.TSMI_MusteriSil.Text = "Müşteri Sil";
             // 
             // AnaForm

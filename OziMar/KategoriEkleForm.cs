@@ -70,11 +70,25 @@ namespace OziMar
 
         private void TSMI_sil_Click(object sender, EventArgs e)
         {
-
+            if (!dm.RemooveCategory(id))
+            {
+                MessageBox.Show("Silme İşlemi Başarısız");
+            }
+            dataGridView1.DataSource = dm.kategorilistele();
         }
 
         private void btn_guncelle_Click(object sender, EventArgs e)
         {
+            Kategori c = new Kategori();
+            c.ID = Convert.ToInt32(tb_ID.Text);
+            c.Isim = tb_İsim.Text;
+            c.Aciklama = tb_Açıklama.Text;
+            if (!dm.UpdateCategory(c))
+            {
+                MessageBox.Show("Güncelleme İşlemi Başarısız");
+            }
+            dataGridView1.DataSource = dm.kategorilistele();
+            tb_ID.Text = tb_İsim.Text;
             btn_Ekle.Visible = true;
             btn_guncelle.Visible = false;
         }
